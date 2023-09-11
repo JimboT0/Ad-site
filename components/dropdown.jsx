@@ -61,16 +61,16 @@ export default function dropdown() {
                                 }`}
                         >
                             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                                <li className="text-gray-600 hover:text-indigo-800 font-lato">
+                                <li className="text-gray-600 hover:text-indigo-800 font-lato border p-3">
                                     <Link href="/">Home</Link>
                                 </li>
-                                <li className="text-gray-600 hover:text-indigo-800 font-lato">
+                                <li className="text-gray-600 hover:text-indigo-800 font-lato border p-3">
                                     <Link href="/about">Specials</Link>
                                 </li>
-                                <li className="text-gray-600 hover:text-indigo-800 font-lato">
+                                <li className="text-gray-600 hover:text-indigo-800 font-lato border p-3">
                                     <Link href="/products">Categories</Link>
                                 </li>
-                                <li className="text-gray-600 hover:text-indigo-800 font-lato">
+                                <li className="text-gray-600 hover:text-indigo-800 font-lato border p-3">
                                     <Link href="/contact">Shop</Link>
                                 </li>
                             </ul>

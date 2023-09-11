@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 function footer() {
     return (
-        <div className="w-[100%] h-[457px] bg-indigo-800 justify-center items-center text-center" >
+        <div className="w-[100%] h-[457px] bg-gray-800 justify-center items-center text-center" >
 
 
             <div className=' md:columns-6 columns-1 md:pt-60'>

@@ -26,7 +26,7 @@ function ProjectList({ categoryFilter }) {
         {projects.map((project) => (
 
           <Link
-            href={`${project.url}`}
+            href={`/projects/${project.slug}`}
             key={project._id}
             className="rounded-lg p-10 text-center">
 

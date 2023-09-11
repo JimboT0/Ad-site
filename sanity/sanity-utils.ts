@@ -103,3 +103,37 @@ export async function getProject(slug: string): Promise<Project> {
     );
 };
 
+
+export async function getPopularItem(slug: string): Promise<Project> {
+
+    const client = createClient({
+
+        projectId: "krtr6fep",
+        dataset: "production",
+        apiVersion: "2023-07-12",
+
+    });
+
+     return client.fetch(
+        groq`*[_type == "popular" && slug.current == $slug][0]{
+
+            _id,
+
+            _createdAt,
+
+            name,
+
+            category,
+
+            "slug": slug.current,
+
+            "image": image.asset->url,
+
+            url,
+
+            content
+
+        }`,
+        { slug }
+    );
+};

@@ -14,12 +14,6 @@ const popular = {
 
         },
         {
-            name: 'category',
-            title: 'Category',
-            type: 'string'
-
-        },
-        {
             name: 'slug',
             title: 'Slug',
             type: 'slug',

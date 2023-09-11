@@ -28,7 +28,7 @@ export default async function popular() {
                         {populars.map((project) => (
 
                             <Link
-                                href={`${project.url}`}
+                                href={`/popular/${project.slug}`}
                                 key={project._id}
                                 className="mx-10 h-64 w-64">
 
@@ -53,7 +53,7 @@ export default async function popular() {
 
 
                 </div>
-                
+
             </div>
         </div>
 
